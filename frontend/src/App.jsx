@@ -39,7 +39,7 @@ const App = () => {
   )
 
   return (
-    <div className="h-screen" data-theme={theme}>
+    <div className="h-full" data-theme={theme}>
 
       <Routes>
         <Route path='/' element={isAuthenticated && isOnboarded ? (
