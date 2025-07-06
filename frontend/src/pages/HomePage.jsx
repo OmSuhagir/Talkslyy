@@ -43,7 +43,7 @@ const HomePage = () => {
     if (outgoingFriendReqs && outgoingFriendReqs.length > 0) {
       outgoingFriendReqs.forEach((req) => {
         console.log(req)
-        outgoingIds.add(req.recipient._id);
+        outgoingIds.add(req?.recipient?._id);
       });
       setOutgoingRequestsIds(outgoingIds);
     }
